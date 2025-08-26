@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مبدل هوشمند فارسی - نسخه پیشرفته</title>
+    <link href="https://v1.fontapi.ir/css/Vazir" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>مبدل هوشمند فارسی</h1>
+        <p>تبدیل متن فارسی تایپ شده با صفحه کلید انگلیسی بدون تغییر محتوای معتبر انگلیسی</p>
+    </header>
+
+    <div class="container">
+        <h2>تبدیل متن فارسی تایپ شده با کیبورد انگلیسی</h2>
+        <p class="description">این ابزار به صورت هوشمند متون فارسی که با صفحه کلید انگلیسی تایپ شده‌اند را تشخیص داده و
+            تبدیل می‌کند، در حالی که کلمات و جملات معتبر انگلیسی را بدون تغییر باقی می‌گذارد.</p>
+
+        <textarea id="inputText" placeholder="متن خود را اینجا تایپ کنید... (مثال: sghl)"></textarea>
+
+        <div class="buttons">
+            <button id="convertBtn">
+                <span>تبدیل هوشمند</span>
+            </button>
+            <button id="clearBtn">
+                <span>پاک کردن</span>
+            </button>
+        </div>
+
+        <div class="status" id="status"></div>
+
+        <h3>نتیجه تبدیل:</h3>
+        <div class="result" id="result"></div>
+
+        <div class="stats" id="stats">
+            <div class="stat-box">
+                <div class="stat-number" id="totalWords">0</div>
+                <div class="stat-label">کل کلمات</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="convertedWords">0</div>
+                <div class="stat-label">کلمات تبدیل شده</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="englishWords">0</div>
+                <div class="stat-label">کلمات انگلیسی</div>
+            </div>
+        </div>
+
+        <div class="info">
+            <h4>چگونه کار می‌کند؟</h4>
+            <p>این سیستم از الگوریتم پیشرفته‌ای برای تشخیص کلمات انگلیسی استفاده می‌کند. ابتدا کلمات رایج و الگوهای خاص
+                (مانند لینک‌ها و ایمیل‌ها) را بررسی می‌کند، سپس با استفاده از API دیکشنری صحت کلمات را تأیید می‌کند.</p>
+            <p>کلمات فارسی که با کیبورد انگلیسی تایپ شده‌اند (مانند "sghl" که باید "سلام" شود) تشخیص داده شده و به فارسی
+                تبدیل می‌شوند.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>ابزار مبدل هوشمند فارسی  | استفاده از فونت‌های Vazir</p>
+    </div>
+
+<script src="index.js" defer></script>
+</body>
+
+</html>
